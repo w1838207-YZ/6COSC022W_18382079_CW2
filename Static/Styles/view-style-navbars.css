@@ -1,0 +1,41 @@
+#navbar {
+    overflow: hidden;
+    background-color: #FFDFC1;
+}
+
+#navbar #leftside, #navbar a, #navbar input, #navbar span{
+    float: left;
+}
+
+#navbar #rightside {
+    float: right;
+}
+
+#navbar a, #navbar span {
+    display: block;
+    color: #601700;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 15px;
+    transition: all 0.25s;
+}
+
+#navbar a.link:hover {
+    color: #601700;
+    background-color: #FF6E01;
+}
+
+#navbar a.link.active, #navbar a.link.active:hover {
+    color: #FFDFC1;
+    background-color: #601700;
+}
+
+#navbar input {
+    margin: 11px 0px;
+    font-size: 17px;
+    color: #601700;
+    background-color: #FFDFC1;
+    border: 2px solid #601700;
+}

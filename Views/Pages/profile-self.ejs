@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="en">
+
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>User Profile - TravelTales</title>
+
+        <link rel="stylesheet" href="/Styles/view-style-overall.css">
+        <link rel="stylesheet" href="/Styles/view-style-navbars.css">
+
+        <script type="text/javascript" src="/Scripts/view-script-selfprofile.js" defer></script>
+
+    </head>
+
+
+    <body>
+
+        <%- include("../Partials/navbar-signed") %>
+
+        <div id="bodycontainer">
+            <h2>My Profile</h2>
+            <table>
+                <tr>
+                    <td>Your first name is:</td>
+                    <td><%= user._forename_ %></td>
+                </tr>
+                <tr>
+                    <td>Your last name is:</td>
+                    <td><%= user._surname_ %></td>
+                </tr>
+                <tr>
+                    <td>You're followed by:</td>
+                    <td><%= user._followers_ %> users</td>
+                </tr>
+                <tr>
+                    <td>You're following:</td>
+                    <td><%= user._followings_ %> users</td>
+                </tr>
+            </table>
+        </div>
+
+    </body>
+
+
+</html>

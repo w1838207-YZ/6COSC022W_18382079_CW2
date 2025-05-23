@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="en">
+
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>User Profile - TravelTales</title>
+
+        <link rel="stylesheet" href="/Styles/view-style-overall.css">
+        <link rel="stylesheet" href="/Styles/view-style-navbars.css">
+
+        <script type="text/javascript" src="/Scripts/view-script-otherprofile.js" defer></script>
+
+    </head>
+
+
+    <body>
+
+        <%- include("../Partials/navbar-signed") %>
+
+        <div id="bodycontainer">
+            <h2>User Profile</h2>
+            <form>
+                <input type="hidden" id="yourID" value=<%= you.id %>>
+                <input type="hidden" id="theirID" value=<%= account._id_ %>>
+                <table>
+                    <tr>
+                        <td>This user's first name is:</td>
+                        <td><%= account._forename_ %></td>
+                    </tr>
+                    <tr>
+                        <td>This user's last name is:</td>
+                        <td><%= account._surname_ %></td>
+                    </tr>
+                    <tr>
+                        <td>The user's follower count is:</td>
+                        <td><%= account._followers_ %></td>
+                    </tr>
+                    <tr>
+                        <td>The user's following count is:</td>
+                        <td><%= account._followings_ %></td>
+                    </tr>
+                    <tr>
+                        <td><button type="submit" id="follow">Follow user</button></td>
+                        <td><button type="submit" id="unfollow">Unfollow user</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+    </body>
+
+
+</html>

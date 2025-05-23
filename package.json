@@ -1,0 +1,29 @@
+{
+  "name": "6cosc022w_18382079_cw2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/w1838207-YZ/6COSC022W_18382079_CW2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/w1838207-YZ/6COSC022W_18382079_CW2/issues"
+  },
+  "homepage": "https://github.com/w1838207-YZ/6COSC022W_18382079_CW2#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.5.0",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "express-session": "^1.18.1",
+    "path": "^0.12.7",
+    "sqlite3": "^5.1.7"
+  }
+}
